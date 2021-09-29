@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/actividad3.css">
+    <title>Actividad 3</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li> <a href="actividad1.html">Actividad 1</a> </li>
+        <li> <a href="actividad2.html">Actividad 2</a> </li>
+        <li> <a href="actividad3.html">Actividad 3</a> </li>
+        <li> <a href="actividad4.html">Actividad 4</a> </li>
+        <li> <a href="index.html">Inicio</a></li>
+    </ul>
+</nav>
+<br>
+<h2>Crear una página web que permita encontrar la sumatoria de los números pares e impares de un valor digitado.   </h2> <br>
+<br>
+    <input type="number" id="numer" placeholder="ingrese un numero"> <br> <br>
+    <button id="boton" onclick="sumar()">Determinar</button>
+    <div id="total">
+    </div>
+</body>
+</html>
+<script>
+    function sumar(){
+    var numero =parseInt(document.getElementById("numer").value);
+    var par=0;
+    var impar=0;
+     for (var i=1; i<=numero;i++){ 
+
+      if (i % 2 == 0){
+        par= par + i; 
+        /* par += "<h1> Par "+i+"</h1>";   */ 
+    }else{
+       impar = impar + i;
+    }
+  }
+  document.getElementById('total').innerHTML="<h1> Sumatoria numeros pares " + par + " y sumatoria numeros impares " + impar+"</h1>" ;
+}
+
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/actividad4.css">
+    <title>Actividad 4</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="actividad1.html">Actividad 1</a> </li>
+            <li> <a href="actividad2.html">Actividad 2</a> </li>
+            <li> <a href="actividad3.html">Actividad 3</a> </li>
+            <li> <a href="actividad4.html">Actividad 4</a> </li>
+            <li> <a href="index.html">Inicio</a></li>
+        </ul> 
+    </nav>
+    <br>
+    <h2>Secuencia de 5 en 5   </h2> <br>
+    <br>
+    <input type="number" id="numer" placeholder="ingrese un numero">
+    <button id="boton" onclick="cinco()">Determinar</button>
+    <div id="mostrar">
+    </div>
+</body>
+</html>
+<script>
+    function cinco(){
+    var numero =parseInt(document.getElementById("numer").value);
+    var mostrar='';
+     for (var i=1; i<=numero;i++){ 
+         if (i % 5 ==0){
+        mostrar +=  "<h1> Secuencia: "+i+"</h1>"; 
+       }
+     } 
+     document.getElementById('mostrar').innerHTML=mostrar;   
+}
+
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/actividad1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Actividad 1</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="actividad1.html">Actividad 1</a> </li>
+            <li> <a href="actividad2.html">Actividad 2</a> </li>
+            <li> <a href="actividad3.html">Actividad 3</a> </li>
+            <li> <a href="actividad4.html">Actividad 4</a> </li>
+            <li> <a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <h1>La sumatoria de los numeros multiplos de 3 comprendidos entre 0 y 100 es:   </h1> <br>
+    <div id="total">
+    </div>
+</body>
+</html>
+<script>
+    var sumatoria=0;
+     for (var i=0; i<=100;i++){  
+      if (i % 3 == 0){
+       sumatoria = sumatoria + i;  
+    }
+}
+    document.getElementById("total").innerHTML=sumatoria;
+</script>

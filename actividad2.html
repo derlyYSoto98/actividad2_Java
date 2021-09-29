@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/actividad2.css">
+    <title>Actividad 2</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="actividad1.html">Actividad 1</a> </li>
+            <li> <a href="actividad2.html">Actividad 2</a> </li>
+            <li> <a href="actividad3.html">Actividad 3</a> </li>
+            <li> <a href="actividad4.html">Actividad 4</a> </li>
+            <li> <a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h2>Selecione un numero y se le mostrara la tabla del numero selecionado con sus multiplos del 1 al 100:   </h2> <br>
+    <br>
+    <select id="numero" onchange="calcular();" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <div id="tabla"></div>
+</body>
+</html>
+<script>
+
+    function calcular() {
+    var producto='';
+    var num=parseInt( document.getElementById('numero').value);
+
+    for (var i=1; i<=100;i++){
+      producto += "<h1> " + i + " x " + num + " = " + i * num + "</h1>"  
+    }
+    document.getElementById("tabla").innerHTML=producto; 
+} 
+</script>

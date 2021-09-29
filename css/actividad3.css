@@ -1,0 +1,42 @@
+body{
+    background: /* linear-gradient(135deg, var(--primary), var(--secondary)), */url(../img/4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+  h2{
+      margin-top: 5%;
+      margin-left: 4%;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  input{
+      background: transparent;
+      font-size: 2em;
+      color: white;
+      margin-left: 35%;
+      border-radius: 30px;
+      padding-left: 10px;
+      outline: none;
+      text-align: center;
+  }
+  button{
+    background: transparent;
+    font-size: 2em;
+    color: white;
+    margin-left: 39%;
+    border-radius: 30px;
+    width: 250px;
+    height: 40px;
+    background: rgb(104, 5, 5);
+    cursor: pointer;
+  }
+  ::placeholder{
+      color: white;
+      font-size: 20px;
+  }
+  h1{
+      margin-left: 8%;
+      margin-top: 2%;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+  }
